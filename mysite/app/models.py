@@ -56,7 +56,7 @@ class Education(models.Model):
 class Software(models.Model):
     name = models.CharField('ソフトウェア', max_length=100)
     level = models.CharField('レベル', max_length=100)
-    parcentage = models.IntegerField('パーセンテージ')
+    percentage = models.IntegerField('パーセンテージ')
 
     def __str__(self):
         return self.name
@@ -65,7 +65,7 @@ class Software(models.Model):
 class Technical(models.Model):
     name = models.CharField('テクニカル', max_length=100)
     level = models.CharField('レベル', max_length=100)
-    parcentage = models.IntegerField('パーセンテージ')
+    percentage = models.IntegerField('パーセンテージ')
 
     def __str__(self):
         return self.name
